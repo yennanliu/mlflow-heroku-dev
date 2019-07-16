@@ -4,14 +4,20 @@ LABEL maintainer "yennj12"
 
 RUN mkdir /mlflow/
 
-RUN pip install mlflow==0.8.0 && \  
+RUN pip install --upgrade pip && \
+RUN pip install -r requirements.txt && \ 
 conda update -n base -c defaults conda && \ 
-pip freeze list  
+conda env list && \ 
+pip freeze list  && \ 
+which mlflow 
 
 EXPOSE 5000
 
 CMD mlflow server \
     --file-store /mlflow \
-    --host 0.0.0.0 \
+    --host 0.0.0.0 
 
-ENTRYPOINT ["/launch_demo_project.sh"]
+# TODO 
+# 1. set up conde env route 
+# 2. run demo exp efter build mlflow env successfully 
+#ENTRYPOINT ["bin/bash", "/launch_demo_project.sh"]
