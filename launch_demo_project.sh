@@ -1,2 +1,2 @@
 #!/bin/sh
-mlflow run https://github.com/mlflow/mlflow-example.git -P alpha=0.4
+(mlflow run https://github.com/mlflow/mlflow-example.git -P alpha=0.4) || (git clone https://github.com/mlflow/mlflow.git && cd mlflow && mlflow run examples/sklearn_elasticnet_wine -P alpha=0.4)
