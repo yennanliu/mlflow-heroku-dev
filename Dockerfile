@@ -14,7 +14,7 @@ conda env list && \
 pip freeze list  && \ 
 which mlflow 
 
-RUN /bin/bash -c "source run_more_demo_projects || source run_demo_project.sh"
+RUN /bin/bash -c "source run_more_demo_projects.sh || source run_demo_project.sh"
 
 EXPOSE 5000
 
