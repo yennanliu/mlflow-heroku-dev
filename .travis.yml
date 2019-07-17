@@ -1,0 +1,18 @@
+sudo: required
+
+services:
+  - docker
+
+branches:
+  only:
+  - master
+
+script:
+  - echo ' ----------------- STEP 1) BUILD DOCKER IMAGE ----------------- '
+  - docker build -t mlflow . && docker run -p 5000:5000 mlflow
+before_deploy:
+  - echo ' ----------------- STEP 2) DOCKER PUSH ----------------- '
+
+deploy:
+  -  echo '----------------- STEP 3) DEPLOY TO HEROKU -----------------'
+ 
