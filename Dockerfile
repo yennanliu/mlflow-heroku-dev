@@ -19,10 +19,10 @@ RUN /bin/bash -c "source launch_demo_project.sh"
 EXPOSE 5000
 
 CMD mlflow server \
-    --file-store /mlflow \
     --host 0.0.0.0 
 
 # TODO 
 # 1. set up conde env route 
 # 2. run demo exp efter build mlflow env successfully 
-#ENTRYPOINT ["bin/bash", "/launch_demo_project.sh"]
+# 3. set up model config via .yml
+# 4. load more example and pipelines 
