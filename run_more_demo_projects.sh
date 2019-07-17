@@ -1,9 +1,9 @@
 #!/bin/sh
-cd && git clone https://github.com/mlflow/mlflow.git && cd mlflow 
+git clone https://github.com/mlflow/mlflow.git 
 # run project 1 
-for alpha in 0.2 0.3 0.4 
+for alpha in 0.3 0.4
 do  
-	echo 'alpha = ' $alpha && mlflow run examples/sklearn_elasticnet_wine -P alpha=$alpha; 
+	echo 'alpha = ' $alpha && mlflow run mlflow/examples/sklearn_elasticnet_wine -P alpha=$alpha; 
 done 
 
 # run project 2 
