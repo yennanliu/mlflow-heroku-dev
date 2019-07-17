@@ -7,4 +7,4 @@ do
     echo 'alpha = ' $alpha && mlflow run mlflow/examples/sklearn_elasticnet_wine -P alpha=$alpha; 
 done 
 # run project 2 
-mlflow run examples/sklearn_logistic_regression 
+mlflow run mlflow/examples/sklearn_logistic_regression 
