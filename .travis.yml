@@ -12,7 +12,3 @@ script:
   - docker build -t mlflow . && docker run -p 5000:5000 mlflow
 before_deploy:
   - echo ' ----------------- STEP 2) DOCKER PUSH ----------------- '
-
-deploy:
-  -  echo '----------------- STEP 3) DEPLOY TO HEROKU -----------------'
- 
