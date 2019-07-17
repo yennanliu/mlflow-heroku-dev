@@ -22,7 +22,7 @@ CMD mlflow server \
     --host 0.0.0.0 
 
 # TODO 
-# 1. set up conde env route 
-# 2. run demo exp efter build mlflow env successfully 
+# 1. set up conda env route 
+# 2. run demo exp after mlflow env build success
 # 3. set up model config via .yml
-# 4. load more example and pipelines 
+# 4. load more examples and pipelines 
