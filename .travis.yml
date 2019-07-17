@@ -9,6 +9,6 @@ branches:
 
 script:
   - echo ' ----------------- STEP 1) BUILD DOCKER IMAGE ----------------- '
-  - docker build -t mlflow . && docker run -it mlflow /bin/bash -c "bash run_demo_project.sh"
+  - docker build -t mlflow . && docker run -it mlflow /bin/bash -c "bash run_demo_project.sh" && docker run -it mlflow /bin/bash -c "bash run_more_demo_projects.sh"
 before_deploy:
   - echo ' ----------------- STEP 2) DOCKER PUSH ----------------- '
