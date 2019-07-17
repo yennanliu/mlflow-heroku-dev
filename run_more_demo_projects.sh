@@ -1,5 +1,5 @@
 #!/bin/sh
-cd && cd mlflow-heroku-dev && git clone https://github.com/mlflow/mlflow.git && cd mlflow 
+cd && git clone https://github.com/mlflow/mlflow.git && cd mlflow 
 # run project 1 
 for alpha in 0.2 0.3 0.4 
 do  
