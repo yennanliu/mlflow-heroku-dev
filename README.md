@@ -21,3 +21,9 @@ $ docker build -t mlflow . && docker run -p 5000:5000 mlflow
 # visit the MLflow UI via http://0.0.0.0:5000
 ```
 </details>
+
+### Ref 
+- Intro to Mlflow 
+	- https://www.mlflow.org/docs/latest/index.html
+	- https://medium.com/@jain.roh/ml-flow-basic-approach-part-1-logging-e528a92922f5
+	- https://medium.com/@yuu.ishikawa/getting-started-with-mlflow-9c2f2543dce3
