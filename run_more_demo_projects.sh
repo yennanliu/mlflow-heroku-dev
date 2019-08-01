@@ -1,4 +1,8 @@
 #!/bin/sh
+
+###############################################################################
+# RUN MULTIPLE MLFLOW DEMO JOB VIA MLFLOW REPO (https://github.com/mlflow/mlflow)
+###############################################################################
 git clone https://github.com/mlflow/mlflow.git 
 
 # run project 1 
