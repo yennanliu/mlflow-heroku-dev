@@ -30,10 +30,13 @@ $ docker build -t mlflow . && docker run -p 5000:5000 mlflow
 ```bash 
 $ cd ~ && git clone https://github.com/yennanliu/mlflow-heroku-dev.git
 $ cd ~ && cd mlflow-heroku-dev 
+$ heroku container:login
 $ heroku create mlflow-heroku 
 $ git add . && git commit -m 'update for heroku deploy' && git push origin 
-$ heroku git:remote -a mlflow-heroku
-$ git push heroku master 
+# Build the image and push to Container Registry
+$ heroku container:push web
+# Then release the image to your app
+$ heroku container:release web
 # visit mlflow UI via https://mlflow-heroku.herokuapp.com/
 ```
 </details>
@@ -43,3 +46,6 @@ $ git push heroku master
 	- https://www.mlflow.org/docs/latest/index.html
 	- https://medium.com/@jain.roh/ml-flow-basic-approach-part-1-logging-e528a92922f5
 	- https://medium.com/@yuu.ishikawa/getting-started-with-mlflow-9c2f2543dce3
+- Deploy app built from Docker Images to Heroku
+	- https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
+	- https://devcenter.heroku.com/articles/container-registry-and-runtime
