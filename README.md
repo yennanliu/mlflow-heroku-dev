@@ -24,6 +24,7 @@ $ docker build -t mlflow . && docker run -p 5000:5000 mlflow
 ```
 </details>
 
+<details>
 <summary>Quick-Start-deploy-to-heroku</summary>
 
 ```bash 
@@ -37,6 +38,7 @@ $ git push heroku master
 # visit mlflow UI via https://mlflow-heroku.herokuapp.com/
 ```
 </details>
+
 ### Ref 
 - Intro to Mlflow 
 	- https://www.mlflow.org/docs/latest/index.html
