@@ -31,7 +31,6 @@ $ docker build -t mlflow . && docker run -p 5000:5000 mlflow
 $ cd ~ && git clone https://github.com/yennanliu/mlflow-heroku-dev.git
 $ cd ~ && cd mlflow-heroku-dev 
 $ heroku create mlflow-heroku 
-$ heroku addons:create mlflow-postgresql:dev -a mlflow-heroku
 $ git add . && git commit -m 'update for heroku deploy' && git push origin 
 $ heroku git:remote -a mlflow-heroku
 $ git push heroku master 
