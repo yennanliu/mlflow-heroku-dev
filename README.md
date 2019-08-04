@@ -30,12 +30,11 @@ $ docker build -t mlflow . && docker run -p 5000:5000 mlflow
 ```bash 
 $ cd ~ && git clone https://github.com/yennanliu/mlflow-heroku-dev.git
 $ cd ~ && cd mlflow-heroku-dev 
-$ heroku container:login
 $ heroku create mlflow-heroku 
 $ git add . && git commit -m 'update for heroku deploy' && git push origin 
 # Set the stack of your app to container
 $ heroku stack:set container
-# push app the heroku
+# push dockrized app to heroku
 $ git push heroku master
 ```
 </details>
