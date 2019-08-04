@@ -33,11 +33,10 @@ $ cd ~ && cd mlflow-heroku-dev
 $ heroku container:login
 $ heroku create mlflow-heroku 
 $ git add . && git commit -m 'update for heroku deploy' && git push origin 
-# Build the image and push to Container Registry
-$ heroku container:push web
-# Then release the image to your app
-$ heroku container:release web
-# visit mlflow UI via https://mlflow-heroku.herokuapp.com/
+# Set the stack of your app to container
+$ heroku stack:set container
+# push app the heroku
+$ git push heroku master
 ```
 </details>
 
