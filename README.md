@@ -6,7 +6,7 @@
 * Airflow Heroku demo : [airflow-heroku-dev](https://github.com/yennanliu/airflow-heroku-dev)
 
 
-[![Build Status](https://travis-ci.org/yennanliu/Xjob.svg?branch=master)](https://travis-ci.org/yennanliu/mlflow-heroku-dev)
+[![Build Status](https://travis-ci.org/yennanliu/mlflow-heroku-dev.svg?branch=master)](https://travis-ci.org/yennanliu/mlflow-heroku-dev)
 [![PRs](https://img.shields.io/badge/PRs-welcome-6574cd.svg)](https://github.com/yennanliu/mlflow-heroku-dev/pulls)
 
 ### Deploy to Heroku 
