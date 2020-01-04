@@ -34,8 +34,13 @@ $ heroku create mlflow-heroku
 $ git add . && git commit -m 'update for heroku deploy' && git push origin 
 # Set the stack of your app to container
 $ heroku stack:set container
+# login to heroku container
+$ heroku login
+$ heroku container:login
 # push dockrized app to heroku
-$ git push heroku master
+#$ git push heroku master
+# push to heroku container
+$ heroku container:push web -a mlflow-heroku
 ```
 </details>
 
