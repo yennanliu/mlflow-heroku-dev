@@ -26,3 +26,4 @@ CMD mlflow server \
 # 2. run demo exp after mlflow env build success
 # 3. set up model config via .yml
 # 4. load more examples and pipelines 
+# 5. push deploy/train output to slack/s3
