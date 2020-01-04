@@ -5,10 +5,10 @@
   "env": {
     "PYTHONPATH": {
       "description": "Path for python",
-      "value": "/app"
+      "value": "/"
     }
     },
   "scripts": {
-    "postdeploy": "mlflow ui"
+    "postdeploy": "pip freeze list && pwd && ls"
   }
 }
