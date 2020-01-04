@@ -1,0 +1,14 @@
+{
+  "name": "mlflow-heroku",
+  "description": "Run Mlflow on Heroku",
+  "image": "heroku/python",
+  "env": {
+    "PYTHONPATH": {
+      "description": "Path for python",
+      "value": "/app"
+    }
+    },
+  "scripts": {
+    "postdeploy": "mlflow ui"
+  }
+}
