@@ -21,7 +21,7 @@ EXPOSE 5000
 CMD mlflow server \
     --host 0.0.0.0 
 
-# TODO 
+### TODO ###
 # 1. set up conda env route 
 # 2. run demo exp after mlflow env build success
 # 3. set up model config via .yml
